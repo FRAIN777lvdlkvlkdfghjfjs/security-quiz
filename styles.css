@@ -1,0 +1,255 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input-group {
+    margin: 20px 0;
+    display: flex;
+}
+
+#text-answer {
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 4px 0 0 4px;
+}
+
+#submit-answer {
+    border-radius: 0 4px 4px 0;
+}
+
+#text-answer.correct {
+    border-color: #2ecc71;
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+#text-answer.wrong {
+    border-color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+
+.hints {
+    font-size: 0.9em;
+    color: #f89808;
+    margin-top: 10px;
+}
+
+.correct-answer {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+#check-btn {
+    background: #f39c12;
+}
+
+#next-btn {
+    background: #2ecc71;
+}
+
+#restart-btn {
+    background: #3498db;
+}
+
+.btn.selected {
+    background: #f39c12;
+    box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+}
+
+.btn.correct {
+    background: #27ae60;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+}
+
+.btn.wrong {
+    background: #e74c3c;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#question {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-container {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.image-option {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 3px solid transparent;
+}
+
+.image-option:hover {
+    transform: scale(1.05);
+}
+
+.image-option.selected {
+    border-color: #f39c12;
+}
+
+.image-option img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-option.correct {
+    border: 3px solid #2ecc71 !important;
+    background-color: rgba(46, 204, 113, 0.1);
+}
+
+.image-option.wrong {
+    border: 3px solid #e74c3c !important;
+    background-color: rgba(231, 76, 60, 0.1);
+}
+/* Контейнер для вариантов с картинками */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  /* Стили для каждого варианта с картинкой */
+  .image-option {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden; /* Обрезаем всё, что выходит за границы */
+    cursor: pointer;
+    transition: all 0.3s;
+    aspect-ratio: 1/1; /* Сохраняем квадратную форму */
+    border: 2px solid #ddd;
+  }
+  
+  /* Контейнер для самой картинки */
+  .image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Стили для изображений */
+  .image-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрезаем и масштабируем изображение */
+    transition: transform 0.3s;
+  }
+  .image-option {
+    height: 180px; /* Фиксированная высота */
+    width: 100%; /* Ширина подстраивается */
+  }
+  .image-option:hover img {
+    transform: scale(1.05);
+  }
+  @media (max-width: 600px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+    .image-option {
+      height: 220px;
+    }
+  }
+  #score h3 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#score p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+  /* Подпись под изображением */
+  .image-option p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+  }
+.image-option.locked {
+    pointer-events: none;
+    opacity: 0.8;
+}
+@media (max-width: 600px) {
+    .btn-grid, #image-container {
+        grid-template-columns: 1fr;
+    }
+}
