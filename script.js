@@ -96,7 +96,7 @@ const questions = [
         question: "Выберите картинку, на которой изображён маршрутизатор",
         answers: [
             { image: "6488867291.jpg", correct: false },
-            { image: "сервер.jpg", correct: false },
+            { image: "Сервер.jpg", correct: false },
             { image: "маршрутизатор.jpg", correct: true},
             { image: "коммутатор.jpg", correct: false }
         ]
