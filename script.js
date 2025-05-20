@@ -122,7 +122,7 @@ const questions = [
         question: "Какая иконка обозначает антивирус?",
         answers: [
           { image: "Щит.jpg", correct: true},
-          { image: "лупа.jpg", correct: false },
+          { image: "Лупа.jpg", correct: false },
           { image: "вирус.webp", correct: true },
           { image: "чето.jpg", correct: true }
         ]
