@@ -73,7 +73,7 @@ const questions = [
 
     
     {
-        type: "classic",
+        type: "question",
         question: "Что такое «кейлоггер» (Keylogger)?",
         answers: [
             { text: "Антивирусная программа", correct: false },
@@ -83,7 +83,7 @@ const questions = [
         ]
     },
     {
-        type: "classic",
+        type: "question",
         question: "Кто такие «скрипт-кидди» (Script kiddie)?",
         answers: [
             { text: "Профессиональные хакеры, работающие на государство", correct: false },
