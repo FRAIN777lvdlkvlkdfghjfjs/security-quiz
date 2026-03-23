@@ -65,6 +65,42 @@ const questions = [
             { "text": "AH (Authentication Header)", "correct": false }
         ]
     },
+
+
+
+
+
+
+    
+    {
+        type: "classic",
+        question: "Что такое «кейлоггер» (Keylogger)?",
+        answers: [
+            { text: "Антивирусная программа", correct: false },
+            { text: "Программа или устройство, записывающее нажатия клавиш", correct: true },
+            { text: "Устройство для чтения электронных книг", correct: false },
+            { text: "Графический редактор", correct: false }
+        ]
+    },
+    {
+        type: "classic",
+        question: "Кто такие «скрипт-кидди» (Script kiddie)?",
+        answers: [
+            { text: "Профессиональные хакеры, работающие на государство", correct: false },
+            { text: "Начинающие «хакеры», использующие готовые скрипты и программы для взлома, не вникая в их суть", correct: true },
+            { text: "Разработчики антивирусных программ", correct: false },
+            { text: "Специалисты по настройке компьютерных сетей", correct: false }
+        ]
+    },
+
+
+
+
+
+
+
+    
+    
      {
         type: "one-word",
         question: "Как называется вредоносная программа, которая маскируется под легитимное ПО?",
