@@ -1,12 +1,12 @@
 const questions = [
     {
-        "question": "Какая уязвимость в протоколе TLS может привести к компрометации данных при неправильной настройке сертификатов и слабых параметров шифрования?",
+        "question": "Что нужно сделать в первую очередь, если вы потеряли смартфон, на котором остались авторизованными все аккаунты?",
         "time_limit": 30,
         "answers": [
-            { "text": "POODLE", "correct": true },
-            { "text": "Heartbleed", "correct": false },
-            { "text": "CRIME", "correct": false },
-            { "text": "BEAST", "correct": false }
+            { "text": "Купить новый смартфон", "correct": false },
+            { "text": "Заблокировать SIM-карту у оператора и войти в аккаунты с другого устройства, чтобы завершить сеансы", "correct": true },
+            { "text": "Позвонить на свой номер и попросить вернуть телефон", "correct": false },
+            { "text": "Написать в соцсетях пост о пропаже", "correct": false }
         ]
     },
     {   type: "multiple",
@@ -20,13 +20,13 @@ const questions = [
         ]
     },
     {
-        "question": "Какой метод используется для обхода фильтров на основе URL и внедрения вредоносных скриптов в веб-приложение?",
+        "question": "Какое расширение файла наиболее опасно открывать, если оно пришло по электронной почте от неизвестного отправителя?",
         "time_limit": 30,
         "answers": [
-            { "text": "SQL Injection", "correct": false },
-            { "text": "Cross-Site Request Forgery (CSRF)", "correct": false },
-            { "text": "Clickjacking", "correct": false },
-            { "text": "Cross-Site Scripting (XSS)", "correct": true }
+            { "text": ".txt", "correct": false },
+            { "text": ".jpg", "correct": false },
+            { "text": ".pdf", "correct": false },
+            { "text": ".exe", "correct": true }
         ]
     },
     {
